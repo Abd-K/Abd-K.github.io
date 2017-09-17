@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<header>
+	<meta charset="utf-8" />
+	<title> Template </title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="shortcut icon" href="Images/">  
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</header>
+
+<div id="pageContainer">
+	<body>
+			<ul id="Menu_Bar">
+			</br>
+			</br>
+				<li ><a href="index.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Home </a></li>
+				<li><a href="Tours.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Tours </a></li>
+				<li><a href="Gallery.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Gallery </a></li>
+				<li><a href="animation.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Animation </a></li>	
+				<li><a href="About.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class="current"> About </a></li>
+				<li><a href="FAQ.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> FAQ </a></li>
+				<li class="" onMouseOver="Drop(this);" onMouseOut="unDrop(this);"><a href="Credits.html" onMouseOver="Color(this);"  onMouseOut="Color2(this);"class=""> Credits </a>
+					<ul>
+						<li onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""><a href="" onclick="source()" > Source Code</a></li>
+					</ul>
+				</li>	
+			</ul>
+			<script>
+				function Color(obj){
+					if ( obj.className==""){
+					obj.className='active';
+					}
+				}
+				function Color2(obj) {
+				if ( obj.className=="active"){
+					obj.className="";
+					}
+				}
+				function Drop(obj){
+					obj.className='Drop';
+				}
+				function unDrop(obj){
+					obj.className='';
+				}
+				function vidButtons(obj){
+				}
+			</script>	
+	
+		<div id="mainContent">
+			<div id="imageBar">  
+				<img id="meImage" src="Images/MeCards.png" alt="Card Image" >
+				</img>
+			</div>
+			<div id="AboutContent">
+				<table>
+				<tr><h1>Abdul Khaled</h1></tr>
+				<tr>	<td width="500">Abdul Khaled, soon to be a household name.
+				He spent his early years in Beirut and moved to London as a teenager, 
+				where he has established himself as the capital's new face of street magic.
+				With a great mastery of cards, he puts on a truly spectacular show.</td> 
+				<td><img src="Images/photo2.jpg" Height="200" width="200"></img></td></tr>
+				<tr> <td>He is a true master of the London street scene. 
+				His natural showmanship and ability to draw and captivate crowds makes him the one to look out for</td></tr>
+				</table>
+			</div>
+		</div>
+	
+	</body> 
+	<footer>
+	</br>
+		<p>Posted by: Abdul Khaled</p>
+		<p> Disclaimer: This is a fictious website, part of Oxford Brookes university course</p>
+	</footer>
+</div>
+</html>

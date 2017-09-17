@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<header>
+	<meta charset="utf-8" />
+	<title> Template </title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="shortcut icon" href="Images/">  
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</header>
+
+<div id="pageContainer">
+	<body>
+			<ul id="Menu_Bar">
+			</br>
+			</br>
+				<li ><a href="index.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Home </a></li>
+				<li><a href="Tours.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Tours </a></li>
+				<li><a href="Gallery.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Gallery </a></li>
+				<li><a href="animation.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Animation </a></li>	
+				<li><a href="About.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> About </a></li>
+				<li><a href="FAQ.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class="current"> FAQ </a></li>
+				<li class="" onMouseOver="Drop(this);" onMouseOut="unDrop(this);"><a href="Credits.html" onMouseOver="Color(this);"  onMouseOut="Color2(this);"class=""> Credits </a>
+					<ul>
+						<li onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""><a href="" onclick="source()" > Source Code</a></li>
+					</ul>
+				</li>	
+			</ul>
+			<script>
+				function Color(obj){
+					if ( obj.className==""){
+					obj.className='active';
+					}
+				}
+				function Color2(obj) {
+				if ( obj.className=="active"){
+					obj.className="";
+					}
+				}
+				function Drop(obj){
+					obj.className='Drop';
+				}
+				function unDrop(obj){
+					obj.className='';
+				}
+				function vidButtons(obj){
+				}
+			</script>	
+	
+		<div id="mainContent">
+			<div id="imageBar">  
+				<img id="meImage" src="Images/MeCards.png" alt="Card Image" >
+				</img>
+			</div>
+			<div id="FAQContent">
+				<table >
+				<tr ><h1>FAQ</h1></tr>
+				<tr><td ><h3>What got you interested in magic tricks? </h3></td></tr>
+				<tr><td>I grew up with a passion and curiosity making the impossible seem possible.</td></tr>
+				<tr><td><h3>Which great magic artist inspired you, and who do you try to imitate? </h3></td></tr>	
+				<tr><td>I have been and still do get inspired by some great artists along my way, the likes of David Blaine and Dynamo with whom I share a similar style. 
+				Yet the goal will always be to stay creative, and surprise my audience </td></tr>
+				<tr><td><h3>What age did you start practising magic </h3></td></tr>
+				<tr ><td >You know I always like to have an element of surprise with me, ever since I was very young. At around the age of 6, my mother got me my first magic set.
+					Since then i always remember experimenting with different ways to manipulate ideas we take for granted</td></tr>
+				</table>
+			</div>
+		</div>
+	
+	</body> 
+	<footer>
+	</br>
+		<p>Posted by: Abdul Khaled</p>
+		<p> Disclaimer: This is a fictious website, part of Oxford Brookes university course</p>
+	</footer>
+</div>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<header>
+	<meta charset="utf-8" />
+	<title> Template </title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="shortcut icon" href="Images/">  
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</header>
+
+<div id="pageContainer">
+	<body>
+			<ul id="Menu_Bar">
+			</br>
+			</br>
+				<li ><a href="index.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Home </a></li>
+				<li><a href="Tours.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Tours </a></li>
+				<li><a href="Gallery.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class="current"> Gallery </a></li>
+				<li><a href="animation.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Animation </a></li>	
+				<li><a href="About.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> About </a></li>
+				<li><a href="FAQ.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> FAQ </a></li>
+				<li class="" onMouseOver="Drop(this);" onMouseOut="unDrop(this);"><a href="Credits.html" onMouseOver="Color(this);"  onMouseOut="Color2(this);"class=""> Credits </a>
+					<ul>
+						<li onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""><a href="" onclick="source()" > Source Code</a></li>
+					</ul>
+				</li>	
+			</ul>
+			<script>
+				function Color(obj){
+					if ( obj.className==""){
+					obj.className='active';
+					}
+				}
+				function Color2(obj) {
+				if ( obj.className=="active"){
+					obj.className="";
+					}
+				}
+				function Drop(obj){
+					obj.className='Drop';
+				}
+				function unDrop(obj){
+					obj.className='';
+				}
+				function vidButtons(obj){
+				}
+			</script>	
+	
+		<div id="mainContent">
+			<div id="imageBar">  
+				<img id="meImage" src="Images/MeCards.png" alt="Card Image" >
+				</img>
+			</div>
+			<div id='galleryContent'>
+				<img id="sideImage1" src="" >
+				<img id="centerImage" src="" >
+				<img id= "sideImage2" src="" >
+				
+				<script>
+					var a = 0;
+					var b = 1;
+					var c = 2;
+					var img = new Array();
+					 
+					//Array of images
+					img[0] = "gallery/1.jpg";
+					img[1] = "gallery/2.jpg";
+					img[2] = "gallery/3.jpg";
+					img[3] = "gallery/4.jpg";
+					img[4] = "gallery/5.jpg";
+					img[5] = "gallery/6.jpg";
+					img[6] = "gallery/7.jpg";
+					img[7] = "gallery/8.jpg";
+					function swapImage()
+					{
+					   document.getElementById("sideImage1").src = img[a];
+					   document.getElementById("centerImage").src = img[b];
+					   document.getElementById("sideImage2").src = img[c];
+					   if(a < img.length - 1) a++; else a= 0;
+					   if(b < img.length - 1) b++; else b= 0;
+					   if(c < img.length - 1) c++; else c= 0;
+					   setTimeout("swapImage()",3000);
+					
+					   
+					}
+					window.onload=swapImage;
+	</script>
+			</div>
+		</div>
+	
+	</body> 
+	<footer>
+	</br>
+		<p>Posted by: Abdul Khaled</p>
+		<p> Disclaimer: This is a fictious website, part of Oxford Brookes university course</p>
+	</footer>
+</div>
+</html>

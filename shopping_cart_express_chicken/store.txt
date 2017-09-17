@@ -1,0 +1,27 @@
+// drinks buttons
+echo "<form action=\"db_form_add.php\" method=\"post\"> ";
+												//echo "<input type=\"submit\"  value=\"", $row['ITEM'],"\"  name=\" userid\"  /> ";
+												echo "<input type=\"submit\"  value=\"ss","\"  name=\"userid\"  /> ";
+												echo "<input type=\"submit\" name=\"ITEM\" value=\" Submit \"/>";
+												//echo " <input type=\"submit\" name=\"QTY\" value=\" ", $row['QTY'], "\"/> ";
+												echo '<br>';
+												echo '<br>';
+												echo " <input type=\"submit\" name=\"ITEM\" value=\" ", $row['ITEM'], "\"/> ";
+												echo " <input type=\"submit\" name=\"PRICE\" value=\" ", $row['Price'], "\"/> ";
+											echo "	</form>";
+									echo "</td>";
+									
+									
+							// a href buttons		
+										echo "<a href><img class=\"images\" src='" .$row['IMAGE']."' ></a>";
+										echo "<form method=\"post\">";
+											echo "<H3>", $row['ITEM'], "<H3>";
+											echo "<h4>£", $row['Price'], "</h4>";
+											echo "<a id=\"Button_Design\" href=\"http://sots.brookes.ac.uk/~11027616/customisation.php\" >Customise</a>";
+											echo "<a id=\"Button_Design\"  href=\"db_form_add.php\">Add to cart</a>";
+										echo "</form>";
+										
+										// a href del button
+										<form action="db_form_delete.php" method="get">
+										<td><a href=\'db_form_delete.php\'><img src=\'Images/bin.PNG\' value=\' ',$row['ITEM_ID'],' \' alt=\'bin\' width=\'20\' height=\'20\' text-align:centers=\' \'></a></td>	
+									</form>

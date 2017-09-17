@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" style="background-image:url('') ;background-color:#000000;"  >
+<header>
+	<meta charset="utf-8" />
+	<title> Template </title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="shortcut icon" href="Images/">  
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</header>
+
+<div id="pageContainer" >
+	<body onload="init()">
+			<ul id="Menu_Bar">
+			</br>
+			</br>
+				<li ><a href="index.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Home </a></li>
+				<li><a href="Tours.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Tours </a></li>
+				<li><a href="Gallery.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Gallery </a></li>
+				<li><a href="animation.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class="current"> Animation </a></li>	
+				<li><a href="About.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> About </a></li>
+				<li><a href="FAQ.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> FAQ </a></li>
+				<li class="" onMouseOver="Drop(this);" onMouseOut="unDrop(this);"><a href="Credits.html" onMouseOver="Color(this);"  onMouseOut="Color2(this);"class=""> Credits </a>
+					<ul>
+						<li onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""><a href="" onclick="source()" > Source Code</a></li>
+					</ul>
+				</li>	
+			</ul>
+			<script>
+				function Color(obj){
+					if ( obj.className==""){
+					obj.className='active';
+					}
+				}
+				function Color2(obj) {
+				if ( obj.className=="active"){
+					obj.className="";
+					}
+				}
+				function Drop(obj){
+					obj.className='Drop';
+				}
+				function unDrop(obj){
+					obj.className='';
+				}
+				function vidButtons(obj){
+				}
+			</script>	
+	
+		<div id="mainContent" >
+			
+			<div id="canvasContent" >
+				<canvas Id="MyCanvas" WIDTH="900" HEIGHT="650" style="border:1px solid #FFFFFF"></canvas>
+			
+				<script>
+						
+					var canvas = document.getElementById("MyCanvas");
+					var ctx = canvas.getContext("2d");
+					var backg = new Image();
+					var photo = new Image();
+					var title = new Image();
+					var cards = new Image();
+					
+					cards.src = "Images/animation/cards.png";
+					backg.src = "Images/animation/CityOrig.jpg";
+					photo.src = "Images/animation/nocards.png";
+					title.src = "Images/animation/title.png";
+					function init() {
+						fileX=0;
+						frame = 0;
+						fadeInt1=0;
+						State=false;
+						loop=false;
+						delay =true;
+						var intervalBG = setInterval( function() {fadeIn( backg,0,150,900,500, function(State){ clearInterval(intervalBG); cont(State);   });},20) ;
+						
+						function cont(State){
+							if(State==true){
+								State =false;
+								ctx.drawImage(title,250,2,350,150);
+								
+								 var inter1 = setInterval(function() { light(480,150, function(State){    cont2(State);    });},50);
+								setTimeout(function() {	clearInterval(inter1); 	loop=false;	},2000);									
+
+								function cont2(State){
+									if(State==true){
+										State =false;
+											backg.src = "Images/animation/blurredCity.jpg";
+											var interval2 = setInterval( function() {fadeIn(backg,0,150,900,500, function(State){    clearInterval(interval2);  cont3(State);   });},20) ;
+											
+										function cont3(State){
+											if(State==true){
+												State =false;
+												var interval3 = setInterval( function() {fadeIn(photo,300,300, 450,350, function(State){ clearInterval(interval3); cont4(State);   });},20);
+												function cont4(State){
+													if(State==true){
+															
+														State =false;
+														
+													var interval4 = setInterval(function() { light(600,190, function(State){  cont5(State)   });},30) ;
+													var interval5 = setInterval(function() { light(350,190, function(State){  cont5(State) });},30) ;
+													setTimeout(function() {	clearInterval(interval4); 	loop=false;	},2000);
+													setTimeout(function() {	clearInterval(interval5); 	loop=false;	},2000);
+													function cont5(State){
+														if(State==true){
+															State =false;
+																setInterval(CardAnimation,80);
+															}
+															}
+													}
+													}
+											}
+										 } 
+									}
+								}
+						}
+						}
+
+					}	
+					function fadeIn(img,x,y,w,h,callback){
+						fadeInt1++;
+						if(fadeInt1 <=100){
+						ctx.clearRect(0,0,150,150);
+						ctx.globalAlpha = fadeInt1/100;
+						ctx.drawImage(img,x,y, w,h);	
+						 
+						}
+						else{
+						State=true;
+						fadeInt1=0;
+						callback(State);
+						}
+						
+					}		
+					/*function fadeOut(img,x,y,w,h){
+						if(fadeInt1 >200){
+						ctx.clearRect(0,0,150,150);
+						ctx.globalAlpha = (100- (fadeInt1 -200))/100;
+						ctx.drawImage(img,x,y, w,h);
+						
+						}
+						fadeInt1++;
+					}			*/				
+					function light(pos1, pos2, callback){
+						
+						if (fileX<10){
+							tempX= fileX.toString();
+							tempX = '0'+tempX; 
+						}
+						 if (fileX>=10 &&  fileX<14){
+							tempX = fileX;
+						}
+							if (fileX<14 ){
+								var img4 = new Image();
+								ctx.clearRect(pos1,pos2,100,100);
+								img4.src = "Images/animation/light/Unti00"+tempX+".png"; 
+								ctx.drawImage(img4,pos1,pos2, 100,100);	
+								fileX++;
+							}
+							if (fileX==14 && loop==false){
+												
+								State=true;
+								loop=true;
+								fileX=0; 
+								callback(State);
+						}
+							
+					}
+					
+					function CardAnimation() {
+					var canvas = document.getElementById("MyCanvas");
+					var ctx = canvas.getContext("2d");
+						if (frame==15) {
+							inc= -1;
+						}
+						if (frame==0) {
+							inc=1;
+						}
+						frame =frame+inc;
+						ctx.clearRect(100,100,1000,1000);
+						ctx.drawImage(backg,0,150, 900,500);
+						ctx.drawImage(photo,300,300, 450,350);
+						ctx.drawImage(title,250,2,350,150);
+						ctx.drawImage(cards,300,370+frame, 100,60);
+						ctx.drawImage(cards,650,370+frame, 100,60);
+
+					}
+				</script>
+			</div>
+		</div>
+	
+	</body> 
+	<footer >
+	</br>
+		<p>Posted by: Abdul Khaled</p>
+		<p> Disclaimer: This is a fictious website, part of Oxford Brookes university course</p>
+	</footer>
+</div>
+</html>

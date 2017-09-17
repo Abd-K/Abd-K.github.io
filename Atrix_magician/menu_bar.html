@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> Template </title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="shortcut icon" href="Images/">  
+</head>
+<body>
+<div id="Div_Menu_Bar">
+<p> hello </p>
+	<ul id="Menu_Bar">
+		<!-- how to do the current function pages share the same source? try javascript instead of css -->
+		<li><a href="menu_bar.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Home </a></li>
+		<li><a href="Tours.php" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Tours </a></li>
+		<li><a href="Updates.php" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Updates </a></li>
+		<li><a href="About.php" onMouseOver="Color(this);"  onMouseOut="Color2(this);"class=""> About </a>
+			<ul>
+				<li onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""><a href="2" > as</a></li>
+				<li onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""><a href="3" > asd</a></li>
+				<li onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""><a href="4" > asdas</a></li>
+			</ul>
+		</li>	
+		<li><a href="Gallery.php" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Gallery </a></li>
+		<li><a href="animation.php" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Animation </a></li>	
+	</ul>
+	<script>
+		      
+function Color(obj){
+ obj.className='active';
+}
+function Color2(obj) {
+	obj.className='';
+}
+	</script>	
+</div>
+
+</body>
+</html>

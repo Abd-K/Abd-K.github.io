@@ -1,0 +1,219 @@
+html, body, iframe{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html  {
+    
+    /*background-color:rgba(0,0,0,0.95);*/  /* coloured bar behind menu  */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+	background-image:url("../Images/City.jpg"); 
+    background-repeat:no-repeat;
+    background-size: 1920px 970px;
+	background-attachment: fixed;
+    background-position: center; 
+
+}
+
+body {
+
+}
+#pageContainer {
+    margin:0;
+    height: 900px;
+    width: 900px;
+    margin-left:auto;
+    margin-right:auto;
+
+    }
+
+ul#Menu_Bar, footer {
+    text-align:center;
+	background-size: 100% 100%;
+	background-image:url("../Images/bars.jpg"); 
+        }
+
+ul#Menu_Bar, ul#Menu_Bar li ul {
+    font: 12px Verdana;
+    list-style-type: none;
+	height: 70px;
+	}
+ul#Menu_Bar li ul{
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+    left: 5px;
+    width: inherit;
+    border: 2px solid #FFFFFF;  
+
+}
+ul#Menu_Bar li{
+    margin-left:auto;
+    margin-right:auto;
+    display: inline; 
+    padding:6px;
+    position: relative;
+    }
+
+ul#Menu_Bar li.Drop ul li {
+    visibility: visible ;
+    display: block;
+	position:relative;
+    background-color: #FFFFFF; 
+	z-index: 1;
+}
+ul#Menu_Bar li a{
+    padding: 0px 15px;
+    border: 2px solid #FFFFFF;  
+    letter-spacing:1px;
+    /*background-color: #444342;*/
+    background-color: #000000; 
+    color: #FFFFFF;   /* White font  */
+    text-decoration: none;
+    }
+ul#Menu_Bar li ul li a{
+    border:0;
+    background-color: transparent ; 
+	color: #000000; 
+
+}
+ul#Menu_Bar a.active, ul#Menu_Bar a.current {
+    background-color: #CA0000;
+    }
+ul#Menu_Bar li ul li.active{
+    background-color: #CA0000;
+}
+
+#mainContent {
+	margin-left:auto;
+    margin-right:auto;
+	height:650px;
+	background-color: #FFFFFF; 
+	display:inline;
+	outline:none;
+}
+#imageBar{
+	height:250px;
+	width:900px;
+	margin-left:auto;
+    margin-right:auto;
+	background: transparent;
+ 	}
+
+#meImage{
+position: relative;
+left:500px;
+height:250px;
+width:370px;
+
+ }
+ #meImage:hover{
+
+
+
+ }
+
+#vidContent{
+    height:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#canvasContent{
+	width:900px;
+	height:700px;
+    margin-left:auto;
+    margin-right:auto;
+
+	}
+	#tourContent{
+	  height:500px;
+    margin-left:auto;
+    margin-right:auto;
+		color:#FFFFFF;
+	 font-family: "Verdana";
+	}
+	
+	#tourContent td, th{
+	padding-right: 60px;
+	text-align:left;
+	}
+	#CreditContent{
+	  height:500px;
+    margin-left:auto;
+    margin-right:auto;
+		color:#FFFFFF;
+		font-size:14px;
+	 font-family: "Verdana";
+	}
+		#CreditContent td, th{
+		padding-right: 70px;
+			text-align:left;
+	border-collapse: separate;
+	 }
+	#AboutContent{
+	  height:500px;
+    margin-left:auto;
+    margin-right:auto;
+		color:#FFFFFF;
+	 font-family: "Verdana";
+	}
+	#FAQContent{
+	  height:500px;
+    margin-left:auto;
+    margin-right:auto;
+		color:#FFFFFF;
+	 font-family: "Verdana";
+	}
+	#FAQContent td {
+	width:650px;}
+footer {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+	margin-top:-20px;
+    height:100px;
+	font: 12px Verdana;
+	color:#FFFFFF;
+}
+	
+/* gallery File*/	
+#galleryContent{
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	height:500px;	
+	
+}
+
+#sideImage1{
+
+	height: 200px;
+	width:150px;
+	margin-left:50px;
+	margin-top:100px;
+}
+#centerImage{
+	height:300px;
+	width:250px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#sideImage2{
+
+	height: 200px;
+	width:150px;
+	margin-right:50px;
+	margin-top:100px;
+
+}

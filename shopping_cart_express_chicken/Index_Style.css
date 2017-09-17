@@ -1,0 +1,257 @@
+	head {
+	}
+	
+	body {
+	background-image:url('Images/texture.jpg');
+	background-size:1930px 1420px;
+	background-repeat:no-repeat;
+	 background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	}
+#Checkout {
+	float:center;
+	background-color:#EEEEEE; /* grey */
+	width:745px;
+	text-align: center;
+	}
+	
+#delivery {
+	width:500px;
+	text-align: right;
+	}
+	
+#collection {
+	width: 500px;
+	text-align: right;
+	}
+	#Container{
+	padding:10px;
+	margin-top:30px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 1010px;
+	height:auto;
+	min-height:680px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:680px;                   /* for IE as it does not support min-height */
+	
+	border: 3px inset #000000;
+	background-color:#FFFFFF ; /*cream color */
+	/* background-color:#FFFFCC;  cream color  */
+	display:flex;
+	}
+	
+	#Center {
+	padding:5px;
+	width:760px;
+	height:auto;
+	min-height:680px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:680px;                   /* for IE as it does not support min-height */
+	}
+	
+	#Top_Bar {
+	height:250px;
+	text-align:center;
+	}
+	
+.TopLogo_Img {
+	width:200px;
+	height:200px;
+	}
+
+	#Menu_Board {
+	//background-color:#F1CA90; /* test */
+	padding:5px;
+	border: 3px solid #000000;
+	}
+	
+ul#Menu_Bar {
+	font: 18px Cooper Black;
+	list-style-type: none;
+	background-color:#FFCA00;  /* Orange bar color  */
+	}
+	
+ul#Menu_Bar li {
+	display: inline;
+	padding:15px;
+	
+	}
+	
+ul#Menu_Bar li a {
+	padding: 4px 15px;
+	border: 5px solid #000000;  
+	letter-spacing:1px;
+	background-color: #CA6060; 
+	color: #FFFFFF;   /* White font  */
+	text-decoration: none;
+	}
+	
+ul#Menu_Bar a:hover {
+	background-color: #CA0000; 
+	color: #FFFFFF;
+	}
+	
+ul#Menu_Bar li.current a {
+	background-color: #CA0000; 
+	}
+	
+.images {
+	width:250px;
+	height:200px;
+	}
+.Menu_Tables {
+	border-spacing: 20px;
+}
+.Menu_Tables td {
+	border:1px solid black;
+	width:350px;
+	padding:5px;
+	text-align:center;
+	}
+
+.Menu_Tables tr {
+	height:350px;
+	}	
+
+h4{
+	margin:0px;
+	}
+	
+h6{
+	margin:0px;
+	}	
+	
+H3 {
+	color:black;
+	font: 15px Cooper Black;
+	margin:0px;
+	}
+	
+	#Button_Design {
+	font: 12px Cooper Black;
+	list-style-type: none;
+	padding: 2px 2px;
+	border: 3px solid #000000; /* black */
+	background-color: #CA0000; /* Blue */
+	color: #FFFFFF; /* Red */
+	text-decoration: none;
+	letter-spacing:1px;
+	margin-right:30px;
+	margin-left:30px;
+	}
+	
+	#Button_Design:hover {
+	background: #FFFFFF; /* White */
+	color: #C00000 ; /* Red */
+	}
+	
+	#Button_Design2 {
+	font: 12px Cooper Black;
+	list-style-type: none;
+	padding: 2px 2px;
+	border: 3px solid #000000; /* black */
+	background-color: #CA0000; /* Blue */
+	color: #FFFFFF; /* Red */
+	text-decoration: none;
+	letter-spacing:1px;
+
+	}
+	#Button_Design2:hover {
+	background: #FFFFFF; /* White */
+	color: #C00000 ; /* Red */
+	}
+	
+	#Right_Bar {
+	position: relative;
+	float:right;
+	left:10px;
+	text-align:center;
+	width:230px;
+	overflow:auto;
+	}
+	
+	#Login_Bar {
+	margin-top:28px;
+	}
+	
+	#Cart_Bar {
+	margin-top:143px;
+	border: 3px solid #000000;
+	padding:5px;
+	}
+	
+	#Cart_Table td {
+	table-layout:fixed;
+	text-align: center;
+	word-wrap:break-word;
+	}
+	
+	#Banner_Bar{
+	margin-top:5x;
+	border-style:groove;
+	border-width:3px; 
+	border-color:#000000;
+	text-align:center;
+	}
+	
+	#Banner_Bar2{
+	margin-top:40px;
+	margin-left:30px;
+	margin-right:30px;
+	border-style:groove;
+	border-spacing: 20px;
+	padding:15px;
+	border-width:1px; 
+	border-color:#000000;
+	text-align:center;
+	}
+	
+.Banner_Img {
+	width:200px;
+	height:200px;
+	}
+	
+.Banner_Img2 {
+	width:500px;
+	height:200px;
+}
+
+footer{
+	margin-left:auto;
+	margin-right:auto;
+	width: 1030px;
+	text-align:center;
+	border: 3px solid #000000;
+	background-color:#FFFFFF;
+	}
+	
+ul#Bot_menu {
+	font: 12px Cooper Black;
+	list-style-type: none;
+	}
+	
+ul#Bot_menu li {
+	display: inline;
+	padding:5px;
+	}
+	
+ul#Bot_menu li a {
+	padding: 5px 10px ;
+	border: 3px solid #000000; /* black */
+	background-color: #FFCA00; /* Orange */
+	color: #FF0000; /* White */
+	text-decoration: none;
+	margin-right:100px;
+	margin-left:100px;
+	}
+	
+ul#Bot_menu a:hover {
+	background: #FFFFFF; /* White */
+	color: #C00000 ; /* Red */
+	}
+	
+	

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<header>
+	<meta charset="utf-8" />
+	<title> Template </title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="shortcut icon" href="Images/">  
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</header>
+
+<div id="pageContainer">
+	<body>
+			<ul id="Menu_Bar">
+			</br>
+			</br>
+				<li ><a href="index.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Home </a></li>
+				<li><a href="Tours.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class="current"> Tours </a></li>
+				<li><a href="Gallery.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Gallery </a></li>
+				<li><a href="animation.html" onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> Animation </a></li>	
+				<li><a href="About.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> About </a></li>
+				<li><a href="FAQ.html"  onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""> FAQ </a></li>
+				<li class="" onMouseOver="Drop(this);" onMouseOut="unDrop(this);"><a href="Credits.html" onMouseOver="Color(this);"  onMouseOut="Color2(this);"class=""> Credits </a>
+					<ul>
+						<li onMouseOver="Color(this);" onMouseOut="Color2(this);" class=""><a href="" onclick="source()" > Source Code</a></li>
+					</ul>
+				</li>	
+			</ul>
+			<script>
+				function Color(obj){
+					if ( obj.className==""){
+					obj.className='active';
+					}
+				}
+				function Color2(obj) {
+				if ( obj.className=="active"){
+					obj.className="";
+					}
+				}
+				function Drop(obj){
+					obj.className='Drop';
+				}
+				function unDrop(obj){
+					obj.className='';
+				}
+				function vidButtons(obj){
+				}
+			</script>	
+	
+		<div id="mainContent">
+			<div id="imageBar">  
+				<img id="meImage" src="Images/MeCards.png" alt="Card Image" >
+				</img>
+			</div>
+			<div id="tourContent">
+				
+				<table>
+				<tr><h1>Live at the O2 Arena</h1></tr>
+				<tr><th><b></b>Location </b></th><th>Date</th><th><b>Standard </br>Ticket </b></th> <th><b>VIP </br> SEATS</b></th></tr>
+				<tr><td>ATrix Live 2015 </br> The O2, Peninsula Square, </br>London SE10 0DX</td><td>  Tue, 06 Oct 2015 </br> at 8:00 PM</td><td>(£39.50) </td> <td> (99.50) </td></tr>
+				<tr><td>ATrix Live 2015 </br> The O2, Peninsula Square, </br>London SE10 0DX</td><td>  Wed, 07 Oct 2015 </br> at 8:00 PM</td><td>(£39.50) </td> <td> (99.50) </td></tr>
+				<tr><td>ATrix Live 2015 </br> The O2, Peninsula Square, </br>London SE10 0DX</td><td>  Fri, 09 Oct 2015 </br> at 8:00 PM</td><td>(£49.50) </td> <td> (119.50) </td></tr>
+				</table>
+			</div>
+		</div>
+	
+	</body> 
+	<footer>
+	</br>
+		<p>Posted by: Abdul Khaled</p>
+		<p> Disclaimer: This is a fictious website, part of Oxford Brookes university course</p>
+	</footer>
+</div>
+</html>

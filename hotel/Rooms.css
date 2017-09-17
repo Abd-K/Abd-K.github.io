@@ -1,0 +1,178 @@
+
+
+
+
+body{
+	background:#000000;
+
+}
+
+
+#level0 {
+  	margin-right:10px;
+  	margin-left:10px;
+
+	padding-bottom:10px;
+        background:#a4aea4;
+	text-align: center;
+	height:1550px;
+
+}
+
+#level1{
+	bottom:0px;
+	height:1420px;
+
+        background:#4b3b2a;
+
+
+}
+
+
+#left{
+
+
+	left: 10px;
+	margin-left:10px;
+	width:170px;
+	background:#92a4ac;
+	text-align: right;
+	font-size: 11pt;
+	font-family: "helvetica", "sans-serif";
+	list-style: none;
+
+}
+
+
+#logo2{
+	margin-right:10px;
+  	margin-left:10px;
+	margin-top:0px;
+	margin-bottom:0px;
+
+	height:105px;
+	
+
+  
+}
+
+
+
+#menus1{	
+
+
+	margin-right:10px;
+  	margin-left:10px;
+  	margin-top:0px;
+  	margin-bottom:10px;
+	background:#798b82;
+
+	list-style: none;
+	
+}
+#menus1 li {
+display:block
+}
+#menus1 li a {
+text-decoration:none;
+padding:5px 0;
+margin-right:10px;
+margin-left:10px;
+width:130px;
+
+background:#485e49;
+color:#eeeeee;
+font-weight:Bold;
+font-style:italic;
+
+
+}
+
+#menus1 li a {
+text-align:center;
+
+}
+
+#menus1 li a:hover {
+background:#a2b3a1;
+color:#000
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 150px;
+	}
+ul li {
+	position: relative;
+	}
+
+li ul {
+	position: absolute;
+	left: 149px;
+	top: 0;
+	display: none;
+	Font-size:12px;
+	background: #fff000;
+	}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: #777;
+	background: #fff000;
+	padding: 5px;
+
+	}
+
+
+
+li:hover ul { display: block; }
+li:hover ul, li.hover ul { 
+	display: block; }
+#center{	
+	position: absolute;
+	left:250px;
+	right:380px;
+	top:139px;
+	
+	font-size: 12pt;
+	text-align: right;
+	background:#777777;
+
+
+
+}
+
+#right{
+	position : absolute;
+	left:990px;
+	right:30px;
+	top:139px;
+	padding:10px;
+	font-size: 12pt;
+	text-align: left;
+	background:#755557;}
+#bigright{
+	display:none;
+	position : absolute;
+	left:138px;
+	top:139px;
+	padding:10px;
+	font-size: 12pt;
+	text-align: left;
+	background:#755557;
+	opacity:0.9;
+	filter:alpha(opacity=90);}
+
+
+footer{
+
+  	margin-right:10px;
+  	margin-left:10px;
+  
+  	margin-bottom:0px;
+        padding:0;
+        background:#eeeeee;
+	text-align: center;
+}
