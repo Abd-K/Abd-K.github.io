@@ -1,111 +1,89 @@
-
-
-
-
 body{
 	background:#000000;
-
 }
-
 
 #level0 {
   	margin-right:10px;
   	margin-left:10px;
-
 	padding-bottom:10px;
-        background:#a4aea4;
+    background:#e3e8e3;
 	text-align: center;
-	height:600px;
-
+	height: 100%;
 }
 
 #level1{
 	bottom:0px;
-	height:420px;
-
-        background:#4b3b2a;
-
-
+	height:450px;
+    background:#e8eff2;
 }
 
-
 #left{
-
-
 	left: 10px;
 	margin-left:10px;
 	width:170px;
-	background:#92a4ac;
+	height:430px;
+	background:#ced7db;
 	text-align: right;
-	font-size: 11pt;
+	font-size: 10pt;
 	font-family: "helvetica", "sans-serif";
 	list-style: none;
-
 }
-
 
 #logo2{
 	margin-right:10px;
   	margin-left:10px;
 	margin-top:0px;
 	margin-bottom:0px;
-
 	height:105px;
-	
-
-  
 }
 
-
-
 #menus1{	
-
-
 	margin-right:10px;
   	margin-left:10px;
   	margin-top:0px;
   	margin-bottom:10px;
-	background:#798b82;
-
+	background:#e3e8e3;
+	text-align: left;
+	text-overflow: ellipsis;
 	list-style: none;
-	
 }
+
 #menus1 li {
-display:block
-}
-#menus1 li a {
-text-decoration:none;
-padding:5px 0;
-margin-right:10px;
-margin-left:10px;
-width:130px;
-
-background:#485e49;
-color:#eeeeee;
-font-weight:Bold;
-font-style:italic;
-
+	display:block
 
 }
 
 #menus1 li a {
-text-align:center;
+	text-decoration:none;
+	padding:5px 0;
+	margin-right:10px;
+	margin-left:10px;
+	width:130px;
+	background:#485e49;
+	color:#eeeeee;
+	font-weight:Bold;
+	font-style:italic;
+}
 
+#menus1 li a {
+	text-align:center;
 }
 
 #menus1 li a:hover {
-background:#a2b3a1;
-color:#000
+	background:#a2b3a1;
+	color:#000
 }
+
 ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	width: 150px;
-	}
+}
+
 ul li {
 	position: relative;
-	}
+}
 
 li ul {
 	position: absolute;
@@ -114,7 +92,7 @@ li ul {
 	display: none;
 	Font-size:12px;
 	background: #fff000;
-	}
+}
 
 ul li a {
 	display: block;
@@ -122,57 +100,59 @@ ul li a {
 	color: #777;
 	background: #fff000;
 	padding: 5px;
+}
 
-	}
+li:hover ul { 
+	display: block; 
+}
 
-
-
-li:hover ul { display: block; }
 li:hover ul, li.hover ul { 
-	display: block; }
+	display: block; 
+}
+
 #center{	
 	position: absolute;
 	left:250px;
 	right:380px;
 	top:139px;
-	
-	font-size: 12pt;
+	font-size: 10pt;
+	font-family: "helvetica", "sans-serif";
 	text-align: right;
-	background:#777777;
+}
 
+#rooms {
+	height:430px;
+	margin-left: 30px;
+	overflow: scroll;
+	text-align: left;
+	background:#ced7db;
+}
 
-
+#rooms img {
+	width:100px;
+	height:85px;
 }
 
 #right{
 	position : absolute;
+	overflow: scroll;
 	left:990px;
 	right:30px;
 	top:139px;
+	height: 410px;
 	padding:10px;
-	font-size: 12pt;
+	font-size: 10pt;
+	font-family: "helvetica", "sans-serif";
 	text-align: left;
-	background:#755557;}
-#bigright{
-	display:none;
-	position : absolute;
-	left:138px;
-	top:139px;
-	padding:10px;
-	font-size: 12pt;
-	text-align: left;
-	background:#755557;
-	opacity:0.9;
-	filter:alpha(opacity=90);}
-
+	background:#ced7db;
+}
 
 footer{
-
   	margin-right:10px;
-  	margin-left:10px;
-  
+  	margin-left:10px;  
   	margin-bottom:0px;
-        padding:0;
-        background:#eeeeee;
+    padding:0;
+    font-size: 10pt;
+	font-family: "helvetica", "sans-serif";
 	text-align: center;
 }
