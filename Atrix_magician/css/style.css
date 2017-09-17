@@ -20,9 +20,7 @@ html  {
 	background-image:url("../Images/City.jpg"); 
     background-repeat:no-repeat;
     background-size: 1920px 970px;
-	background-attachment: fixed;
-    background-position: center; 
-
+	background-attachment: scroll;
 }
 
 body {
@@ -34,6 +32,7 @@ body {
     width: 900px;
     margin-left:auto;
     margin-right:auto;
+    margin-top: -30px;
 
     }
 
@@ -46,8 +45,9 @@ ul#Menu_Bar, footer {
 ul#Menu_Bar, ul#Menu_Bar li ul {
     font: 12px Verdana;
     list-style-type: none;
-	height: 70px;
+	height: 50px;
 	}
+
 ul#Menu_Bar li ul{
     padding: 0;
     position: absolute;
